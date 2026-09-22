@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Before It Grew Quiet — a 2D top-down survival game about returning to an abandoned Polish farm and rebuilding it in a world that has gone quiet." />
+  <meta name="theme-color" content="#0a0d0b" />
+  <meta property="og:title" content="Before It Grew Quiet" />
+  <meta property="og:description" content="A quiet world. A familiar place. One chance to rebuild." />
+  <meta property="og:type" content="website" />
+  <title>Before It Grew Quiet — Official Site</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="page-progress" aria-hidden="true"><span></span></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#home" aria-label="Before It Grew Quiet home">
+      <span class="brand-mark">BGQ</span>
+      <span class="brand-copy">
+        <strong>Before It Grew Quiet</strong>
+        <small data-i18n="brandTag">Independent survival game</small>
+      </span>
+    </a>
+
+    <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a href="#about" data-i18n="navAbout">About</a>
+      <a href="#screens" data-i18n="navScreens">Screens</a>
+      <a href="#trailer" data-i18n="navTrailer">Trailer</a>
+      <a href="#devlog" data-i18n="navDevlog">Devlog</a>
+      <a href="#team" data-i18n="navTeam">Authors</a>
+      <a href="#contact" class="nav-cta" data-i18n="navContact">Contact</a>
+    </nav>
+
+    <div class="lang-switch" aria-label="Language switcher">
+      <button class="lang-btn active" data-lang="en" type="button">EN</button>
+      <button class="lang-btn" data-lang="pl" type="button">PL</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow" data-i18n="heroEyebrow">A quiet world. A familiar place. One chance to rebuild.</p>
+          <h1>Before It <span>Grew Quiet</span></h1>
+          <p class="hero-lead" data-i18n="heroLead">
+            A 2D top-down survival game about returning to a ruined Polish farm, scavenging what remains,
+            surviving the infected and turning a place from childhood into a functioning refuge.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#about" data-i18n="heroBtnPrimary">Discover the game</a>
+            <a class="btn btn-ghost" href="#contact" data-i18n="heroBtnSecondary">Follow development</a>
+          </div>
+
+          <div class="hero-meta">
+            <div><strong>2D</strong><span data-i18n="metaView">Top-down</span></div>
+            <div><strong>PC</strong><span>Windows</span></div>
+            <div><strong>SOLO</strong><span data-i18n="metaMode">Single-player</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hero-poster" role="img" aria-label="Temporary stylized farm artwork">
+            <div class="poster-sky"></div>
+            <div class="poster-moon"></div>
+            <div class="poster-tree tree-a"></div>
+            <div class="poster-tree tree-b"></div>
+            <div class="poster-house">
+              <div class="roof"></div>
+              <div class="wall"></div>
+              <div class="window"></div>
+              <div class="door"></div>
+            </div>
+            <div class="poster-fence"></div>
+            <div class="poster-character"></div>
+            <div class="poster-copy">
+              <span data-i18n="posterPreAlpha">PRE-ALPHA</span>
+              <strong>BEFORE IT<br>GREW QUIET</strong>
+            </div>
+          </div>
+          <p class="visual-note" data-i18n="heroVisualNote">Temporary key art — replace it with final artwork or a gameplay screenshot later.</p>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#about" aria-label="Scroll to about section"><span></span></a>
+    </section>
+
+    <section class="section section-soft" id="about">
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-i18n="aboutEyebrow">The game</p>
+        <h2 data-i18n="aboutTitle">Come back before there is nothing left to come back to.</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-story reveal">
+          <p data-i18n="aboutP1">
+            Years after childhood summers spent on his grandmother's farm, the protagonist returns to a place that now stands
+            damaged and silent. The world outside is worse. Roads are empty. Towns are dangerous. The infected roam by day and
+            grow more aggressive after dark.
+          </p>
+          <p data-i18n="aboutP2">
+            The farm is not just a base. It is the heart of the game. Repair buildings, fences and the well, grow food,
+            bring back power, unlock forgotten tools and slowly turn ruin into shelter.
+          </p>
+          <div class="quote-card">
+            <span>“</span>
+            <p data-i18n="aboutQuote">The goal is not to save the world. It is to make one small place worth living in again.</p>
+          </div>
+        </div>
+
+        <div class="feature-list reveal">
+          <article>
+            <span class="feature-no">01</span>
+            <div><h3 data-i18n="feature1Title">Scavenge</h3><p data-i18n="feature1Text">Leave the farm to search abandoned places for food, tools, materials and rare equipment.</p></div>
+          </article>
+          <article>
+            <span class="feature-no">02</span>
+            <div><h3 data-i18n="feature2Title">Survive</h3><p data-i18n="feature2Text">Fight with improvised melee weapons and scarce firearms while managing the risk of staying out too long.</p></div>
+          </article>
+          <article>
+            <span class="feature-no">03</span>
+            <div><h3 data-i18n="feature3Title">Rebuild</h3><p data-i18n="feature3Text">Restore the old farm step by step. Every repair should make the place feel more alive and useful.</p></div>
+          </article>
+          <article>
+            <span class="feature-no">04</span>
+            <div><h3 data-i18n="feature4Title">Learn by doing</h3><p data-i18n="feature4Text">Progress through practical experience, books, blueprints and discoveries instead of grinding XP for its own sake.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="screens">
+      <div class="section-heading heading-row reveal">
+        <div>
+          <p class="eyebrow" data-i18n="screensEyebrow">Gameplay</p>
+          <h2 data-i18n="screensTitle">Screens from development</h2>
+        </div>
+        <p class="section-side-note" data-i18n="screensNote">Real screenshots can be dropped into <code>assets/screenshots</code> later.</p>
+      </div>
+
+      <div class="gallery reveal">
+        <button class="shot shot-large" data-shot="0" type="button" aria-label="Open screenshot 1">
+          <div class="shot-placeholder p1">
+            <span class="shot-badge">01</span>
+            <div class="pixel-scene farm-scene"></div>
+            <div class="shot-copy"><strong data-i18n="shot1Title">The Farm</strong><small data-i18n="shot1Text">Your only permanent base — ruined at first, rebuilt over time.</small></div>
+          </div>
+        </button>
+        <button class="shot" data-shot="1" type="button" aria-label="Open screenshot 2">
+          <div class="shot-placeholder p2">
+            <span class="shot-badge">02</span>
+            <div class="pixel-scene road-scene"></div>
+            <div class="shot-copy"><strong data-i18n="shot2Title">Scavenging</strong><small data-i18n="shot2Text">Quiet roads, abandoned buildings and reasons not to stay too long.</small></div>
+          </div>
+        </button>
+        <button class="shot" data-shot="2" type="button" aria-label="Open screenshot 3">
+          <div class="shot-placeholder p3">
+            <span class="shot-badge">03</span>
+            <div class="pixel-scene night-scene"></div>
+            <div class="shot-copy"><strong data-i18n="shot3Title">After Dark</strong><small data-i18n="shot3Text">Night changes the balance. The infected become more aggressive.</small></div>
+          </div>
+        </button>
+        <button class="shot shot-wide" data-shot="3" type="button" aria-label="Open screenshot 4">
+          <div class="shot-placeholder p4">
+            <span class="shot-badge">04</span>
+            <div class="pixel-scene workshop-scene"></div>
+            <div class="shot-copy"><strong data-i18n="shot4Title">Repair & Craft</strong><small data-i18n="shot4Text">Tools, the workshop and practical progression turn scraps into options.</small></div>
+          </div>
+        </button>
+      </div>
+    </section>
+
+    <section class="section section-trailer" id="trailer">
+      <div class="trailer-wrap reveal">
+        <div class="trailer-copy">
+          <p class="eyebrow" data-i18n="trailerEyebrow">Trailer</p>
+          <h2 data-i18n="trailerTitle">The world will speak for itself.</h2>
+          <p data-i18n="trailerText">The first gameplay trailer is in preparation. This space is ready for a YouTube or Steam embed when it goes live.</p>
+          <div class="status-line"><span></span><strong data-i18n="trailerStatus">COMING SOON</strong></div>
+        </div>
+        <div class="video-placeholder" aria-label="Trailer placeholder">
+          <button type="button" class="play-button" disabled aria-label="Trailer coming soon"><span></span></button>
+          <div class="video-overlay">
+            <span data-i18n="trailerOverlayTop">GAMEPLAY TRAILER</span>
+            <strong data-i18n="trailerOverlayBottom">IN PRODUCTION</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="devlog">
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-i18n="devEyebrow">Development log</p>
+        <h2 data-i18n="devTitle">What is happening next</h2>
+      </div>
+
+      <div class="roadmap reveal">
+        <article class="roadmap-card active">
+          <div class="roadmap-top"><span>v0.2</span><em data-i18n="roadmapNow">NOW</em></div>
+          <h3 data-i18n="road1Title">The world grows outward</h3>
+          <p data-i18n="road1Text">A new area around the old sawmill, more zombie variety, expanded survival systems and fixes based on early testing.</p>
+          <ul>
+            <li data-i18n="road1A">Old sawmill area</li>
+            <li data-i18n="road1B">Mini-boss encounter</li>
+            <li data-i18n="road1C">Bow, arrows and new resources</li>
+            <li data-i18n="road1D">Improved audio and night pressure</li>
+          </ul>
+        </article>
+
+        <article class="roadmap-card">
+          <div class="roadmap-top"><span>NEXT</span><em data-i18n="roadmapPlanned">PLANNED</em></div>
+          <h3 data-i18n="road2Title">A farm worth protecting</h3>
+          <p data-i18n="road2Text">More restoration choices, useful structures, stronger identity for the farm and a clearer sense of visible progress.</p>
+          <ul>
+            <li data-i18n="road2A">Farm restoration milestones</li>
+            <li data-i18n="road2B">Expanded workshop systems</li>
+            <li data-i18n="road2C">More farming and food options</li>
+            <li data-i18n="road2D">Companion foundations</li>
+          </ul>
+        </article>
+
+        <article class="roadmap-card dim">
+          <div class="roadmap-top"><span>LATER</span><em data-i18n="roadmapIdea">IDEA</em></div>
+          <h3 data-i18n="road3Title">Beyond the familiar road</h3>
+          <p data-i18n="road3Text">Future content will expand naturally only after the core loop feels strong. No feature is added just to make a longer checklist.</p>
+          <ul>
+            <li data-i18n="road3A">New locations and stories</li>
+            <li data-i18n="road3B">More blueprints and rare finds</li>
+            <li data-i18n="road3C">Deeper environmental storytelling</li>
+            <li data-i18n="road3D">Steam page and public demo planning</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="team">
+      <div class="team-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="teamEyebrow">The authors</p>
+          <h2 data-i18n="teamTitle">Small team. Personal game.</h2>
+          <p data-i18n="teamIntro">Before It Grew Quiet started as a personal idea inspired by a real place, childhood memories and the kind of survival game we wanted to play ourselves.</p>
+        </div>
+
+        <div class="team-cards reveal">
+          <article class="person-card">
+            <div class="avatar avatar-human">M</div>
+            <div>
+              <span data-i18n="roleCreator">Creator / Game direction</span>
+              <h3>Mateusz</h3>
+              <p data-i18n="bioCreator">Concept, world, mechanics, level ideas, testing and overall direction.</p>
+            </div>
+          </article>
+          <article class="person-card">
+            <div class="avatar avatar-ai">AI</div>
+            <div>
+              <span data-i18n="roleSupport">Development support</span>
+              <h3>OpenAI tools</h3>
+              <p data-i18n="bioSupport">Used as part of the workflow for programming assistance, prototyping, iteration and production support.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-layout">
+        <div class="contact-copy reveal">
+          <p class="eyebrow" data-i18n="contactEyebrow">Contact</p>
+          <h2 data-i18n="contactTitle">Want to talk about the game?</h2>
+          <p data-i18n="contactText">Use the questionnaire for testing, collaboration, press, feedback or general enquiries. For now the form works as a portfolio demo and can be connected to Formspree, Netlify Forms or your own backend.</p>
+
+          <div class="contact-facts">
+            <div><span data-i18n="contactStatusLabel">Project status</span><strong data-i18n="contactStatus">Active development</strong></div>
+            <div><span data-i18n="contactPlatformLabel">Primary platform</span><strong>Windows PC</strong></div>
+            <div><span data-i18n="contactEngineLabel">Engine</span><strong>Godot</strong></div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <label>
+              <span data-i18n="formName">Name</span>
+              <input name="name" type="text" autocomplete="name" required placeholder="Your name" data-i18n-placeholder="phName" />
+            </label>
+            <label>
+              <span data-i18n="formEmail">Email</span>
+              <input name="email" type="email" autocomplete="email" required placeholder="you@example.com" data-i18n-placeholder="phEmail" />
+            </label>
+          </div>
+
+          <label>
+            <span data-i18n="formReason">What is this about?</span>
+            <select name="reason" required>
+              <option value="" data-i18n="optChoose">Choose one</option>
+              <option data-i18n="optTesting">Game testing</option>
+              <option data-i18n="optFeedback">Feedback</option>
+              <option data-i18n="optCollab">Collaboration</option>
+              <option data-i18n="optPress">Press / content creation</option>
+              <option data-i18n="optOther">Other</option>
+            </select>
+          </label>
+
+          <fieldset>
+            <legend data-i18n="formPlay">What do you usually play?</legend>
+            <div class="check-grid">
+              <label><input type="checkbox" name="genres" value="survival" /><span>Survival</span></label>
+              <label><input type="checkbox" name="genres" value="zombie" /><span>Zombie</span></label>
+              <label><input type="checkbox" name="genres" value="farming" /><span>Farming / life sim</span></label>
+              <label><input type="checkbox" name="genres" value="indie" /><span>Indie</span></label>
+            </div>
+          </fieldset>
+
+          <label>
+            <span data-i18n="formMessage">Message</span>
+            <textarea name="message" rows="6" required placeholder="Tell us what you have in mind..." data-i18n-placeholder="phMessage"></textarea>
+          </label>
+
+          <label class="consent">
+            <input type="checkbox" required />
+            <span data-i18n="formConsent">I understand this demo does not send data anywhere until a form backend is connected.</span>
+          </label>
+
+          <button class="btn btn-primary form-submit" type="submit" data-i18n="formSend">Send enquiry</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>Before It Grew Quiet</strong>
+      <span data-i18n="footerTag">A personal survival project in development.</span>
+    </div>
+    <div class="footer-links">
+      <a href="#top" data-i18n="footerTop">Back to top</a>
+      <span>© <span id="year"></span></span>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox">
+    <button class="lightbox-close" type="button" aria-label="Close">×</button>
+    <div class="lightbox-content"></div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
